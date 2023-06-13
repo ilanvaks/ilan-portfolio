@@ -5,6 +5,7 @@ export default function Portfolio() {
   return (
     <Carousel className='all-carousel'>
       <Carousel.Item>
+      <a href="https://lacetalk.net">
         <Image fluid 
           className="w-50"
           src="./images/lacetalk.png"
@@ -14,6 +15,7 @@ export default function Portfolio() {
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
+        </a>
       </Carousel.Item>
       <Carousel.Item>
         <img

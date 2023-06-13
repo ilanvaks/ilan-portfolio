@@ -1,7 +1,6 @@
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { useState, createContext } from 'react';
 import Home from './Pages/Home';
-import ThreeThings from './layout/ThreeThings';
 import './styles/App.scss';
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -16,7 +15,6 @@ function App() {
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/threethings" element={<ThreeThings/>} />
       </Routes>
     </BrowserRouter>
     </AppContext.Provider>

@@ -4,7 +4,7 @@ export default function ThreeThings() {
 
   return (
     <section>
-      <Container fluid id="three-things" className="p-5">
+      <Container fluid id="threethings" className="p-5">
         <Row>
           <Col><h2 className="text-center">Three Things</h2></Col>
         </Row>
