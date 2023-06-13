@@ -6,6 +6,7 @@
 
 .media-container {
 position: relative;  
+
 }
 
 .media-wrapper {
@@ -49,3 +50,38 @@ position: relative;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+
+.header-intro {
+  background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// .media-content::before {
+//   content: '';
+//   position: absolute;
+//   width: 100px;
+//   background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+//   height: 130%;
+//   animation: rotBGimg 3s linear infinite;
+//   transition: all 0.2s linear;
+// }
+
+// @keyframes rotBGimg {
+//   from {
+//     transform: rotate(0deg);
+//   }
+
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// .media-content::after {
+//   content: '';
+//   position: absolute;
+//   background: #07182E;
+//   ;
+//   inset: 5px;
+//   border-radius: 15px;
+// }  

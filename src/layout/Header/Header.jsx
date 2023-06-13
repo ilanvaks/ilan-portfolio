@@ -53,9 +53,9 @@ export default function Page4() {
             >
               <div className="media-content">
                 <h1 className="text-center text-lg-start">
-                  <span>Hello, my name is</span> Ilan Vaks
+                  <span className="header-intro">Hello, my name is Ilan Vaks</span >
                 </h1>
-                <p>
+                <p className="header-intro">
                   Residing in South Florida, I'm Ilan Vaks, a software engineer
                   passionate about sculpting masterpieces in JavaScript,
                   TypeScript, React.js, and MongoDB. Outside the realm of code,
