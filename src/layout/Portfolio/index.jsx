@@ -1,1 +1,1 @@
-export {default} from "./Portfolio.jsx"
+export {default} from "./List.jsx"
