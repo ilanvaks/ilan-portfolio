@@ -3,7 +3,12 @@ import { HashLink } from "react-router-hash-link";
 import resume from "../../resume.pdf"
 
 export default function NavMenu () {
-
+  
+  const handleButtonClick = () => {
+    // Perform the desired action here
+    // For example, open the resume in a new tab
+    window.open(resume, "_blank");
+  };
   return (
     <Navbar bg="dark" variant="dark" expand="md">
       <Container fluid>
@@ -16,7 +21,7 @@ export default function NavMenu () {
             <Nav.Link as={HashLink} to="#skills">Skills</Nav.Link>
             <Nav.Link as={HashLink} to="#about">About</Nav.Link>
             <Nav.Link as={HashLink} to="#contact">Contact</Nav.Link>
-            <Button href={resume} rel="noreferrer" target="_blank" > Resumé </Button>
+            <button class="cti" onClick={handleButtonClick} > <div class="CTI">Resumé</div> </button>
           </Nav>
         </Navbar.Collapse>
       </Container>

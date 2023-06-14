@@ -56,7 +56,7 @@ export default function Page4() {
                   <span className="header-intro">Hello, I'm Ilan Vaks</span >
                 </h1>
                 <p className="header-intro">
-                  Residing in South Florida, I'm Ilan Vaks, a software engineer
+                  Orginally from Brooklyn, New York, but now residing in South Florida, I'm a software engineer
                   passionate about sculpting masterpieces in JavaScript,
                   TypeScript, React.js, and MongoDB. Outside the realm of code,
                   I channel my energy into sports, sharpening both my body and
@@ -70,7 +70,7 @@ export default function Page4() {
                     size="lg"
                     variant="danger"
                     className="equal-size d-block d-lg-inline m-auto button-style button-effect"
-                  > changeBackground
+                  > alterScenery
                   </Button>
                     <Button
                       as={HashLink}

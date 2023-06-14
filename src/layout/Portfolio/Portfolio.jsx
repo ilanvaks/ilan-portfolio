@@ -4,7 +4,13 @@ import {Container, Row, Col, Carousel, Image} from 'react-bootstrap';
 export default function Portfolio() {
   return (
     
-    <Carousel touch fade controls={false} className='all-carousel'>
+    
+    
+    <Container fluid id="threethings"className='all-carousel p-4' >
+         <Row>
+           <Col><h2 className="text-center">Projects</h2></Col>
+         </Row>
+    <Carousel touch fade controls={false}>
       <Carousel.Item>
       <a href="https://lacetalk.net">
         <Image fluid
@@ -14,16 +20,17 @@ export default function Portfolio() {
           style={{ width: '70%' }} 
         />
         </a>
-        <Carousel.Caption>
-        </Carousel.Caption>
+        <Carousel.Caption> 
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+        <Image fluid
+          className="mx-auto d-block"
+          src="./images/lacetalkmaybe.svg"
           alt="Second slide"
+          style={{ width: '70%' }} 
         />
 
         <Carousel.Caption>
@@ -46,5 +53,7 @@ export default function Portfolio() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </Container>
+     
   );
 }
