@@ -11,7 +11,7 @@ export default function Page4() {
 
   const bgUri = "./background/" + bg360[easter360Id].image;
 
-  const handlEeaster360Id = () => {
+  const handle360Id = () => {
     if (easter360Id === bg360.length - 1) {
       setEaster360Id(0);
     } else {
@@ -53,7 +53,7 @@ export default function Page4() {
             >
               <div className="media-content">
                 <h1 className="text-center text-lg-start">
-                  <span className="header-intro">Hello, my name is Ilan Vaks</span >
+                  <span className="header-intro">Hello, I'm Ilan Vaks</span >
                 </h1>
                 <p className="header-intro">
                   Residing in South Florida, I'm Ilan Vaks, a software engineer
@@ -64,12 +64,20 @@ export default function Page4() {
                 </p>
 
                 <div className="text-center text-md-center text-lg-start">
+                <Button
+                    as={HashLink}
+                    onClick={handle360Id}
+                    size="lg"
+                    variant="danger"
+                    className="equal-size d-block d-lg-inline m-auto button-style button-effect"
+                  > changeBackground
+                  </Button>
                     <Button
                       as={HashLink}
                       to="/#portfolio"
                       size="lg"
                       variant="danger"
-                      className="d-block d-lg-inline m-auto button-style button-effect"
+                      className="equal-size d-block d-lg-inline m-auto button-style button-effect"
                     >
                       getPortfolio
                     </Button>
