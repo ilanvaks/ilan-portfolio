@@ -6,7 +6,7 @@ export default function Portfolio() {
     
     
     
-    <Container fluid id="threethings"className='all-carousel p-4' >
+    <Container fluid id="portfolio"className='all-carousel p-4' >
          <Row>
            <Col><h2 className="text-center">Projects</h2></Col>
          </Row>
