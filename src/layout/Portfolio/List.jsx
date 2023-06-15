@@ -10,7 +10,7 @@ export default function List () {
     <Container fluid>
       <Row 
         xs={1} sm={2} lg={3} 
-        className="g-4 justify-content-center">
+        className="all-card g-4 justify-content-center">
           {portfolio.map( (element) => {
             return !element 
             ? (<p>Loading</p>)

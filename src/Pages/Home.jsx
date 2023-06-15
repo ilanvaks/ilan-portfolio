@@ -1,6 +1,7 @@
 import AppLayout from "../layout/AppLayout";
 import Portfolio from "../layout/Portfolio";
 import ThreeThingsCopy from "../layout/ThreeThings/ThreeThingsCopy";
+import Skills from "../layout/Skills"
 import Header from "../layout/Header"
 
 
@@ -11,6 +12,7 @@ export default function Home () {
       <Header/>
       <Portfolio/>
       <ThreeThingsCopy/>
+      <Skills/>
     </AppLayout>
   )
 }
