@@ -2,50 +2,69 @@
 
 export default function List () {
 
+	const slides = [
+    "/icons/javascript.svg", 
+    "/icons/typescript.svg", 
+    "/icons/html.svg",
+    "/icons/css.svg",
+    "/icons/react.svg",
+    "/icons/sass.svg",
+    "/icons/tailwind.svg",
+    "/icons/nextjs.svg",
+    "/icons/node.svg",
+    "/icons/figma.svg",
+    "/icons/express.svg",
+    "/icons/firebase.svg",
+    "/icons/mysql.svg"
+  ];
+
   return (
-    <div className="slider">
+    <div id="skills" className="slider">
 	<div className="slide-track">
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			<img src="/icons/javascript.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			<img src="/icons/bootstrap.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			<img src="/icons/typescript.svg" height="100" width="250" alt=""  />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			<img src="/icons/html.svg" height="100" width="250" alt=""  />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			<img src="/icons/css.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			<img src="/icons/mongo.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			<img src="/icons/react.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			<img src="/icons/sass.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			<img src="/icons/tailwind.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			<img src="/icons/nextjs.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			<img src="/icons/node.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			<img src="/icons/figma.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			<img src="/icons/express.svg" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			<img src="/icons/firebase.svg" height="100" width="250" alt="" />
+		</div>
+		<div className="slide">
+			<img src="/icons/mysql.svg" height="100" width="250" alt="" />
 		</div>
 	</div>
 </div>

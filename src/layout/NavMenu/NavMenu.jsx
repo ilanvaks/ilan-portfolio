@@ -10,7 +10,7 @@ export default function NavMenu () {
     window.open(resume, "_blank");
   };
   return (
-    <Navbar bg="dark" variant="dark" expand="md">
+    <Navbar bg="dark" sticky="top" variant="dark" expand="md">
       <Container fluid>
         <Navbar.Brand as={HashLink} to="/">Ilan Vaks</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav"/>
