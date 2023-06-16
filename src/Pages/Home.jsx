@@ -3,6 +3,9 @@ import Portfolio from "../layout/Portfolio";
 import ThreeThingsCopy from "../layout/ThreeThings/ThreeThingsCopy";
 import Skills from "../layout/Skills"
 import Header from "../layout/Header"
+import Certification from "../layout/Certification"
+// import Contact from "../layout/Contact"
+import About from "../layout/About";
 
 
 export default function Home () {
@@ -13,6 +16,9 @@ export default function Home () {
       <Portfolio/>
       <ThreeThingsCopy/>
       <Skills/>
+      <Certification/>
+      <About/>
+      {/* <Contact/> */}
     </AppLayout>
   )
 }

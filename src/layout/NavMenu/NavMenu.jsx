@@ -1,5 +1,6 @@
 import {Container, Navbar, Nav, Button} from "react-bootstrap"
 import { HashLink } from "react-router-hash-link";
+import Contact from "../../layout/Contact"
 import resume from "../../resume.pdf"
 
 export default function NavMenu () {
@@ -20,7 +21,7 @@ export default function NavMenu () {
             <Nav.Link as={HashLink} to="#portfolio">Portfolio</Nav.Link>
             <Nav.Link as={HashLink} to="#skills">Skills</Nav.Link>
             <Nav.Link as={HashLink} to="#about">About</Nav.Link>
-            <Nav.Link as={HashLink} to="#contact">Contact</Nav.Link>
+            <Contact/>
             <button class="cti" onClick={handleButtonClick} > <div class="CTI">Resumé</div> </button>
           </Nav>
         </Navbar.Collapse>

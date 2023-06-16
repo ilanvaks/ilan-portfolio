@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "image": "/certs/Figma.jpg"
+  },
+  {
+    "id": 1, 
+    "image": "/certs/reacthooks.jpg"
+  },
+  {
+    "id": 3,
+    "image": "/certs/planWebsite.jpg"
+  }
+  ]

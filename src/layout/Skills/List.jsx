@@ -1,4 +1,4 @@
-
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function List () {
 
@@ -19,7 +19,14 @@ export default function List () {
   ];
 
   return (
-    <div id="skills" className="slider">
+		<Container id="skills" className="p-5">
+		<Row>
+			<Col>
+				<h2 className="text-center">SKILLS <span> I take everywhere.</span></h2>
+			</Col>
+		</Row>
+		
+    <div className="slider">
 	<div className="slide-track">
 		<div className="slide">
 			<img src="/icons/javascript.svg" height="100" width="250" alt="" />
@@ -68,5 +75,6 @@ export default function List () {
 		</div>
 	</div>
 </div>
+</Container>
   )
 }
