@@ -1,0 +1,14 @@
+@keyframes hover {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.github-icon {
+  color: black;
+  animation: hover 2s infinite;
+  
+  &:hover {
+    color: white;
+  }
+}

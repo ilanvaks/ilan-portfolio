@@ -16,7 +16,7 @@ export default function About() {
     <Container id="about" className="p-5">
       <Row>
         <Col>
-          <h2 className="text-center">About <span>A Contrarian's Perspective on Life.</span></h2>
+          <h2 className="text-center">Now Let me tell you <span>All about HOW</span></h2>
         </Col>
       </Row>
 

@@ -1,7 +1,9 @@
 import { Col, Container, Row, Carousel, Image } from "react-bootstrap";
 import certData from "../../data/cert.json"; 
 
+
 export default function Certs() {
+    
     return (
         <section>
           <div className="">

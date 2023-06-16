@@ -38,7 +38,7 @@ export default function Page4() {
           />
         </div>
 
-        <Container fluid id="intro">
+        <Container fluid id="home">
           <Row
             className="gradient-box d-flex 
             justify-content-center
