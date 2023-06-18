@@ -5,18 +5,32 @@ export default function ContactModal() {
   const [show, setShow] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch("https://contact-iv.web.app/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+      })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        handleClose()
+      })
+      .catch((error) => {
+        console.error("Error:", error)
+      })
+    }
+
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically handle the form submission e.g. send email
-    console.log(formData);
-    handleClose();
   };
 
   return (
