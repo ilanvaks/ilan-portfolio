@@ -1,27 +1,31 @@
 import React, { useState } from 'react';
-import { Button, Modal, Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
+import { toast } from "react-toastify"
 
 export default function ContactModal() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    fetch("https://contact-iv.web.app/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-      })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-      })
-      .catch((error) => {
-        console.error("Error:", error)
-      })
+  
+    try {
+      const response = await fetch("https://contact-iv.web.app/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP status ${response.status}`);
+      }
+      setFormData({ name: "", email: "", message: "" });
+      toast.success("Success: E-mail has been sent!");
+    } catch (error) {
+      toast.error(`Error: Email hasn't been sent. ${error.message}`);
     }
+  };
   
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
