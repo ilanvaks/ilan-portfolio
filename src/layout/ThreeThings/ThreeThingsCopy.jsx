@@ -14,7 +14,7 @@ export default function ThreeThings() {
       <Row>
 
         <Col>
-        <div class="flip-card my-3">
+        <div class="flip-card mt-4">
     <div class="flip-card-inner">
         <div class="flip-card-front">
         <img className="qf-img" src="/images/handshake.svg" alt="handshake" />
@@ -34,7 +34,7 @@ export default function ThreeThings() {
         </Col>
 
         <Col>
-        <div class="flip-card my-3">
+        <div class="flip-card mt-4">
     <div class="flip-card-inner">
         <div class="flip-card-front">
         <img className="qf-img" src="/images/nerd-face.svg" alt="nerd face" />
@@ -51,7 +51,7 @@ export default function ThreeThings() {
 </div>
         </Col>
 
-        <Col><div class="flip-card my-3">
+        <Col><div class="flip-card mt-4">
     <div class="flip-card-inner">
         <div class="flip-card-front">
         <img className="qf-img" src="/images/pantPallete.svg" alt="Paint Palette" />

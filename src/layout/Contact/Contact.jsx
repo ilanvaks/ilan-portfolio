@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Modal, Form } from 'react-bootstrap';
 
 export default function ContactModal() {
-  const [show, setShow] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleSubmit = (e) => {
@@ -18,16 +17,11 @@ export default function ContactModal() {
       .then((response) => response.json())
       .then((data) => {
         console.log("Success:", data);
-        handleClose()
       })
       .catch((error) => {
         console.error("Error:", error)
       })
     }
-
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -35,16 +29,8 @@ export default function ContactModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Contact Me
-      </Button>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Contact Form</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form onSubmit={handleSubmit}>
+          <Form  id="contact" onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Name</Form.Label>
               <Form.Control type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleInputChange} required />
@@ -64,8 +50,6 @@ export default function ContactModal() {
               Submit
             </Button>
           </Form>
-        </Modal.Body>
-      </Modal>
     </>
   );
 }
