@@ -1,4 +1,4 @@
-import {Container, Navbar, Nav, Button} from "react-bootstrap"
+import {Container, Navbar, Nav,} from "react-bootstrap"
 import { HashLink } from "react-router-hash-link";
 
 import resume from "../../resume.pdf"

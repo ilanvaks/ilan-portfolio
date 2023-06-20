@@ -9,7 +9,7 @@ export default function List () {
   return (
     <Container fluid>
       <Row 
-        xs={1} sm={2} lg={3} 
+        xs={1} sm={2} lg={3} xl={3}
         className="all-card g-4 justify-content-center">
           {portfolio.map( (element) => {
             return !element 

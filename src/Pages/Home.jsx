@@ -16,7 +16,7 @@ export default function Home () {
       <Portfolio/>
       <ThreeThingsCopy/>
       <Skills/>
-      {/* <Certification/> */}
+      <Certification/>
       <About/>
       <Contact/>
     </AppLayout>

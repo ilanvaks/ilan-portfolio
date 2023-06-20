@@ -9,7 +9,7 @@ export default function Portfolio() {
     
     <Container fluid id="portfolio"className='all-carousel p-4' >
          <Row>
-           <Col><h2 className="text-center">Projects</h2></Col>
+           <Col ><h2 className="text-center">Projects</h2></Col>
          </Row>
     <Carousel touch fade controls={false}>
       <Carousel.Item>
